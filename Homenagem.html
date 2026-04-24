@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MorganaFlix - Homenagem</title>
+<link rel="icon" type="image/png" href="https://i.ibb.co/273g29F4/Logo-Morgana-Flix-Fada.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="homenagem.css">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header class="navbar">
+        <a href="TelaPrincipal.html">
+            <div class="logo">
+                <img src="https://i.ibb.co/pjrLNdXK/Logo-Morgana-Flix-Branco.png" alt="Logo MorganaFlix">
+            </div>
+        </a>
+        
+        <div class="header-actions">
+            <a href="TelaPrincipal.html">
+                <button class="glowing-btn">Início</button>
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        
+        <section class="titulo">
+            <h1>Terra do Sempre</h1>
+            <div class="linha"></div>
+        </section>
+        
+        <!-- PLAYER -->
+        <section class="audio-player">
+            <div class="player-box">
+                <div class="capa" id="playBtn">
+                    <img src="https://i.pinimg.com/736x/10/48/42/10484222dfb974b7d22d59895e406878.jpg"/>
+                    <span class="material-symbols-outlined play-icon" id="icon">play_circle</span>
+                </div>
+                
+                <div class="info">
+                    <h3>Sinfonia do Coração</h3>
+                    <p>Sussurro das fadas do ventos</p>
+                    
+                    <div class="barra" id="barra">
+                        <div class="progresso" id="progresso"></div>
+                    </div>
+                    
+                    <div class="tempo">
+                        <span id="current">00:00</span>
+                        <span id="duration">00:00</span>
+                    </div>
+                </div>
+            
+            <!-- AUDIO REAL -->
+            <audio id="audio">
+                <source src="audio/MorganaFlix_homenagem.m4a" type="audio/mpeg">
+            </audio>
+        
+        </section>
+        
+        <section class="conteudo">
+            
+            <div class="texto">
+                <h2>Coração do Sempre</h2>
+                
+                <p>Uma vez me disseram que era impossível ser feliz sozinha por muito tempo. Por um bom tempo, achei que 
+                    falavam de romance e hoje entendo que não era sobre isso. Porque eu sou a pessoa mais feliz ao seu 
+                    lado.</p>
+                <p>Quando eu estou destruída, é você quem me ajuda a reencontrar o sorriso. Você acredita em mim até quando 
+                    eu mesma desisto, e isso é algo raro, mágico. É incrível acordar e saber que existe alguém que está 
+                    ali por mim de verdade. Alguém que percebe o meu silêncio, respeita o meu tempo, ri comigo, segura a 
+                    minha mão e celebra minhas pequenas vitórias como se fossem gigantes.</p>
+                <p>Você é casa. É abrigo. É o riso no meio do caos. A gente é tipo vinho quente dividido: quanto mais o tempo 
+                    passa, mais forte, mais intenso e mais aconchegante fica e sempre esquenta a alma. Somos conversa sem 
+                    hora pra acabar, risadas no meio de ligações e promessas que atravessam o tempo.</p>
+                <p>A sua presença já diz “tô aqui” sem precisar de palavra nenhuma e isso, pra mim, vale tudo. Obrigada por 
+                    ficar, por ser quem você é, por estar na minha vida e principalmente, por existir.</p>
+                
+                <div class="autor">
+                    <span class="material-symbols-outlined">auto_fix_high</span>
+                    <span>Carta Real: Rosana.JS</span>
+                </div>
+            </div>
+            
+            <div class="imagens">
+                <div class="img-grande">
+                    <img src="https://i.ibb.co/zHPJ4bjK/Milenna01.jpg">
+                </div>
+                
+                <div class="img-pequena">
+                    <img src="https://i.ibb.co/2Yg0N3f1/Milenna02.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="portais">
+            
+            <div class="titulo-portais">
+                <span class="material-symbols-outlined estrela">auto_awesome</span>
+                <h2>Portais de Lembranças</h2>
+            </div>
+            
+            <div class="grid-portais">
+                
+                <!-- Portal 1 -->
+                <div class="portal" data-video="audio/videosevcacreditar.mp4">
+                    <img src="https://i.ibb.co/yBFWMPnj/Portal-Acreditar.jpg">
+                    
+                    <div class="overlay">
+                        <div class="play">
+                            <span class="material-symbols-outlined">play_circle</span>
+                        </div>
+                        <p>Se Acreditar</p>
+                    </div>
+                </div>
+                
+                <!-- Portal 2 -->
+                <div class="portal" data-video="audio/videomesmoriso.mp4"> 
+                    <img src="https://i.ibb.co/LzVPBM3W/Portal-Mesmo-Riso.jpg">
+                    
+                    <div class="overlay"> 
+                        <div class="play"> 
+                            <span class="material-symbols-outlined">play_circle</span> 
+                        </div> 
+                        <p>Mesmo Riso</p> 
+                    </div> 
+                </div>
+                
+                <!-- Portal 3 -->
+                <div class="portal" data-video="audio/videoprimavera.mp4">
+                    <img src="https://i.ibb.co/1JmthB5x/Portal-Primavera.jpg">
+                    
+                    <div class="overlay">
+                        <div class="play">
+                            <span class="material-symbols-outlined">play_circle</span>
+                        </div>
+                        <p>Primavera</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MODAL PLAYER -->
+        <div id="modal" class="modal">
+            <video id="videoPlayer" controls></video>
+        </div>
+    
+    </main>
+    
+    <footer class="footer">
+        <p>© 2026 MorganaFlix - Todos os direitos reservados à Terra do Nunca.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
