@@ -1,0 +1,300 @@
+/*-------- PAGINA DOS FILMES --------*/
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: #f6fbff;
+  margin: 0;
+  color: #1e293b;
+}
+
+/* Pozinho Magico */
+
+.snow-container {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* não atrapalha cliques */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.snowflake {
+  position: absolute;
+  top: -30px;
+  color: #ffbe0b; /* AMARELO */
+  user-select: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh) translateX(50px);
+    opacity: 0;
+  }
+}
+
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:white;
+  border-bottom:1px solid #ddd;
+}
+
+
+/* Logo */
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.logo img {
+  height:60px;
+  width:auto;
+}
+
+
+/* Botão Iníco */
+
+.header-actions {
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.glowing-btn {
+  background:#164285;
+  color:white;
+  border:none;
+  padding:10px 25px;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.glowing-btn:hover {
+  box-shadow:0 0 25px rgba(98,142,203,0.9);
+  transform:translateY(-2px);
+}
+
+.hero {
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+.hero-overlay {
+  padding: 50px;
+  color: #102a4e;
+  background: linear-gradient(to top, #f6fbff, transparent);
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  gap: 17px;
+  color: #525b81;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif';
+  font-size: 48px;
+}
+
+.btn-play {
+  background: #395886;
+  border: none;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.glass {
+  background: #e3ecf8;
+  backdrop-filter: blur(10px);
+}
+
+
+.sidebar .card {
+  margin-bottom: 20px;
+}
+
+.trailer {
+  padding:  20px 40px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  max-width: 1800px; 
+  margin: auto; 
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+
+  /* Letras = h2 */
+  font-family:'Noto Serif', serif;
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #395886;
+}
+.logo-titulo {
+  width: 50px; /* tamanho da logo */
+  height: 45px;
+}
+
+
+.cards {
+  padding: 35px;
+}
+.card-grid {
+  display: flex;
+  object-fit: cover;
+  overflow-x: auto;  
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px; 
+  gap: 12px;
+}
+
+.movie {
+  background:none;
+  border:none;
+  text-align: left;
+  cursor:pointer;
+  display: flex;
+  flex-direction: column;
+  transition:0.3s;
+  width: 140px;
+
+  min-width: 140px; 
+  flex-shrink: 0;
+}
+.movie:hover {
+  opacity: 0.70;
+}
+
+.poster {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 2 / 3;
+  border-radius: 10px;
+  object-fit:cover;
+}
+
+.movie h3 {
+  font-size: 14px;
+  margin-top: 17px;
+  margin: 5px 0;
+  color:#164285;
+}
+.movie p {
+  font-size:12px;
+  color:#777;
+}
+
+
+/* Footer */
+.footer {
+  background:#395784;
+  color: rgba(255, 255, 255, 0.678);
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
+
+/*-------- ADAPITAÇÃO DE TELAS --------*/
+
+@media (max-width:480px) {
+  
+  .header {
+    padding:15px 20px;
+  }
+  .catalog {
+    padding:40px 20px;
+  }
+  .movies-grid {
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+  }
+  .movie h3 {
+    font-size:12px;
+  }
+  .movie p {
+    font-size:10px;
+  }
+
+}
+
+@media (max-width:1024px) {
+  
+  .catalog {
+    padding:60px 40px;
+  }
+  .movies-grid {
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+@media (min-width:1400px) {
+
+  .movies-grid {
+    grid-template-columns:repeat(6,1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .movie {
+    min-width: 120px;
+  }
+
+  .poster {
+    height: 170px;
+  }
+
+  .movie h3 {
+    font-size: 13px;
+  }
+
+  .movie p {
+    font-size: 11px;
+  }
+}
