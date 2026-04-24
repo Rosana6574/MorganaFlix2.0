@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    if(localStorage.getItem("indexPermitido") !== "true"){
+    window.location.href = "index.html";
+    }
+    </script>
+    <title>MorganaFlix</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/273g29F4/Logo-Morgana-Flix-Fada.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Noto+Sans:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout-container">
+        <header class="faxada1">
+            <div class="logo">
+                <img src="https://i.ibb.co/pjrLNdXK/Logo-Morgana-Flix-Branco.png" alt="Logo MorganaFlix">
+            </div>
+            <div class="header-actions"> 
+                <a href="Homenagem.html">
+                    <button class="glowing-btn">Homenagem</button> 
+                </a>
+            </div>
+        </header>
+
+        <section class="hero"> 
+            
+            <button class="arrow left">&#10094;</button>
+            
+            <div class="carousel">
+                <div class="slide">
+                    <a href="./filme/TB_filme04.html">
+                        <img src="https://i.ibb.co/5WdrvNKq/Mmorganaimg01.png">
+                    </a>
+                    <div class="caption">
+                        <span class="tag">MÁGIA</span>
+                        <h2>O Segredo das Fadas</h2>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <a href="./filme/TB_filme05.html">
+                        <img src="https://i.ibb.co/qMQ30QyB/Mmorganaimg02.png">
+                    </a>
+                    <div class="caption">
+                        <span class="tag">AVENTURA</span>
+                        <h2>Fadas e Piratas</h2>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <a href="./filme/TB_filme06.html">
+                        <img src="https://i.ibb.co/pvxL6ZJS/Mmorganaimg03.png">
+                    </a>
+                    <div class="caption">
+                        <span class="tag">CRIATURAS MÁGICAS</span>
+                        <h2>O Monstro da Terra do Nunca</h2>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <a href="./filme/TB_filme03.html">
+                        <img src="https://i.ibb.co/LD05FtPy/Mmorganaimg04.png">
+                    </a>
+                    <div class="caption">
+                        <span class="tag">CLÁSSICO</span>
+                        <h2>O Resgate da Fada</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="arrow right">&#10095;</button>
+        
+        </section>
+        
+        <section class="catalog">
+            <h2>Catálogo do Reino</h2>
+            <div class="movies-grid">
+
+                <a href="/filme/TB_filme01.html">
+                    <button class="movie">
+                        <img class="poster movie1" src="https://i.ibb.co/fz8x2yfZ/Tinker-Bell-01.jpg" alt="Excalibur">
+                        <h3>Tinker Bell: Uma Aventura no Mundo das Fadas</h3>
+                        <p>Filme • 1h 17m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/TB_filme02.html">
+                    <button class="movie">
+                        <img class="poster movie2" src="https://i.ibb.co/1G8tWJXS/Tinker-Bell-02.webp" alt="Excalibur">
+                        <h3>Tinker Bell: O Tesouro Perdido</h3>
+                        <p>Filme • 1h 20m</p>
+                    </button>
+                </a>
+                
+                <a href="/filme/TB_filme03.html">
+                    <button class="movie">
+                        <img class="poster movie3" src="https://i.ibb.co/21JLqSgW/Tinker-Bell-03.webp" alt="Excalibur">
+                        <h3>Tinker Bell: O Resgate da Fada</h3>
+                        <p>Filme • 1h 16m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/TB_filme04.html">
+                    <button class="movie">
+                        <img class="poster movie4" src="https://i.ibb.co/TDXZsJ05/Tinker-Bell-04.jpg" alt="Excalibur">
+                        <h3>Tinker Bell: O Segredo das Fadas</h3>
+                        <p>Filme • 1h 15m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/TB_filme05.html">
+                    <button class="movie">
+                        <img class="poster movie5" src="https://i.ibb.co/Pv5mPTR7/Tinker-Bell-05.jpg" alt="Excalibur">
+                        <h3>Tinker Bell: Fadas e Piratas</h3>
+                        <p>Filme • 1h 18m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/TB_filme06.html">
+                    <button class="movie">
+                        <img class="poster movie6" src="https://i.ibb.co/twpPRcxm/Tinker-Bell-06.jpg" alt="Excalibur">
+                        <h3>Tinker Bell: O Monstro da Terra do Nunca</h3>
+                        <p>Filme • 1h 16m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/TB_jogosf07.html">
+                    <button class="movie">
+                        <img class="poster movie7" src="https://i.ibb.co/G3fT2jxT/Tinker-Bell-Jogos-07.jpg" alt="Excalibur">
+                        <h3>Tinker Bell: Jogos dos Refúgio das Fadas</h3>
+                        <p>Filme • 22m</p>
+                    </button>
+                </a>
+
+                <a href="/serie/iniciodisneyfadas.html">
+                    <button class="movie">
+                        <img class="poster movie8" src="https://i.ibb.co/PswHxKT6/Disney-Fadas-08.jpg" alt="Excalibur">
+                        <h3>Tinker Bell: Disney Fadas</h3>
+                        <p>Série • 1 Temporada</p>
+                    </button>
+                </a>
+
+                <a href="/filme/PP_flime01.html">
+                    <button class="movie">
+                        <img class="poster movie9" src="https://i.ibb.co/fzs34WqX/Peter-Pan-01.jpg" alt="Excalibur">
+                        <h3>Peter Pam (1953)</h3>
+                        <p>Filme • 1h 16m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/PP_flime02.html">
+                    <button class="movie">
+                        <img class="poster movie10" src="https://i.ibb.co/RGn5YpGh/Peter-Pan-02.jpg" alt="Excalibur">
+                        <h3>Peter Pan: De Volta à Terra do Nunca</h3>
+                        <p>Filme • 1h 12m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/PP_flime03.html">
+                    <button class="movie">
+                        <img class="poster movie11" src="https://i.ibb.co/gLpyCJgC/Peter-Pan-03.jpg" alt="Excalibur">
+                        <h3>Peter Pan (2003)</h3>
+                        <p>Filme • 1h 35m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/PP_flime04.html">
+                    <button class="movie">
+                        <img class="poster movie12" src="https://i.ibb.co/ZzLGYjKD/Pan-04.jpg" alt="Excalibur">
+                        <h3>Pan (2015)</h3>
+                        <p>Filme • 1h 51m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/PP_flime05.html">
+                    <button class="movie">
+                        <img class="poster movie12" src="https://i.ibb.co/mrXGwVGC/Peter-Pan-05.jpg" alt="Excalibur">
+                        <h3>Peter Pan & Wendy</h3>
+                        <p>Filme • 1h 46m</p>
+                    </button>
+                </a>
+
+                <a href="/filme/PP_flime06.html">
+                    <button class="movie">
+                        <img class="poster movie12" src="https://i.ibb.co/Qj1Q2tdd/Peter-Pan-Alice-06.jpg" alt="Excalibur">
+                        <h3>Alice e Peter: Onde Nascem os Sonhos</h3>
+                        <p>Filme • 1h 34m</p>
+                    </button>
+                </a>
+
+            </div>
+        </section>
+        
+        <footer class="footer">
+            
+            <div class="footer-grid">
+                <div>
+                    <h3>MorganaFlix</h3>
+                    <p>Um portal encantado onde vivem as histórias mágicas da Terra do Nunca.</p>
+                </div>
+            </div>
+            
+            <p class="copyright">© 2026 MorganaFlix - Todos os direitos reservados à Terra do Nunca.</p>
+
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

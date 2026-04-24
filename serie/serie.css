@@ -1,0 +1,394 @@
+/*-------- INICIO DISNEY FADAS --------*/
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family:'Noto Sans', sans-serif;
+    background:#f6f7f7;
+    color:#1a1a1a;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* Logo */
+
+.logo {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.logo img {
+    height:60px;
+    width:auto;
+}
+
+
+/* Botão Início */
+
+.header-actions {
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.glowing-btn {
+    background:#164285;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.glowing-btn:hover {
+    box-shadow:0 0 25px rgba(98,142,203,0.9);
+    transform:translateY(-2px);
+}
+
+
+.hero {
+    height:500px;
+    background-image:url("https://i.pinimg.com/736x/a4/32/ec/a432ec8d89f5a0c5201b399133a7a2ef.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+}
+.hero-overlay {
+    position:absolute;
+    width: 100%;
+    height: 80%;
+    background:linear-gradient(to top,#f6f7f7,transparent);
+}
+.hero-content {
+    position:relative;
+    max-width:800px;
+    padding:40px;
+}
+.hero h1 {
+    font-size:60px;
+    font-family:'Noto Serif', serif;
+    color:#2f466b;
+}
+
+.info {
+    display:flex;
+    gap:15px;
+    margin:10px 0;
+    color:#363636;
+}
+
+.categoria {
+    border:1px solid #395784;
+    padding:2px 8px;
+    border-radius:4px;
+    font-size:12px;
+}
+
+.buttons {
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+    text-decoration: none;
+}
+
+.btn-play {
+    background: #395784ee /*#395784*/;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.btn-play:hover {
+    background: #2f466b;
+}
+
+/* Pastas dos Episódios */
+
+.episodes {
+    padding:40px;
+}
+.episodes h2 {
+    font-family:'Noto Serif', serif;
+    margin-bottom:20px;
+    font-size: 36px;   /* aumenta o tamanho */
+    color: #395784;
+}
+
+.episode {
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    gap:20px;
+    margin-bottom:20px;
+    background: #395784d7;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episode:hover {
+    transform: scale(1.02);
+    /*box-shadow: 0 0 15px rgba(31, 49, 102, 0.527);*/
+}
+
+.episode img {
+    width:200px;
+    border-radius:8px;
+}
+
+.episode-info h3 {
+    font-family:'Noto Serif', serif;
+    margin-bottom:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.episode-info h3 {
+    color: white;
+    margin: 0;
+}
+
+.episode-info p {
+    color: rgb(214, 225, 255);
+    margin-top: 5px;
+}
+
+/* Footer */
+
+.footer {
+    background:#395784;
+    color: rgba(255, 255, 255, 0.678);
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+
+/*-------- EPISÓDIOS 01-14 --------*/
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Noto Serif', serif;
+    background:#f6f7f7;
+    color:#222;
+}
+
+.topo {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+.btn-inicio {
+    padding:8px 18px;
+    border:none;
+    background:#395784;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-inicio:hover {
+    background:#2d4568;
+}
+
+/* container */
+
+.container {
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.background {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: 
+    linear-gradient(to bottom, rgba(135, 168, 226, 0.671), rgba(241, 244, 250, 0.658)),
+    url('https://i.pinimg.com/736x/25/e8/82/25e8820b11f8340f35b2814ce4234f6b.jpg');
+    background-size:cover;
+    background-position:center;
+    opacity:.8;
+    z-index:-1;
+}
+
+/* player */
+
+.player {
+    position:relative;
+    width: 85%;
+    height: 470px;
+    margin:40px auto;
+    border-radius:10px;
+    overflow:hidden;
+    backdrop-filter: blur(5px);
+}
+.player iframe {
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:10px;
+}
+
+/* controle de episodio */
+
+.controle-episodio {
+    margin-top:25px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:25px;
+    border-radius:12px;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+/* texto do episodio */
+
+.episodio-atual {
+    text-align: center;
+}
+
+.episodio-atual p {
+    font-size: 16px;
+    color:#161616;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.episodio-atual h2 {
+    color:#344f79;
+    font-size: 30px;
+}
+
+.invisivel {
+    visibility:hidden;
+}
+
+/* botões anterior/proximo */
+
+.anterior, .proximo {
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:10px 18px;
+    font-weight:bold;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.anterior {
+    background:white;
+    border:2px solid #395784;
+    color:#395784;
+}
+
+.anterior:hover {
+    background:#395784;
+    color:white;
+}
+
+/* botão proximo */
+
+.proximo {
+    background:#395784;
+    border:2px solid #395784;
+    color:white;
+}
+
+.proximo:hover {
+    background:#2d4568;
+}
+
+/* rodapé */
+
+.rodapee {
+    background:#395784;
+    color:rgba(255, 255, 255, 0.678);
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    
+    padding: 25px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/*-------- ADAPITAÇÃO DE TELAS --------*/
+
+@media (max-width:480px) {
+
+header {
+    padding:15px 20px;
+}
+.catalog {
+    padding:40px 20px;
+}
+.movies-grid {
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+.movie h3 {
+    font-size:12px;
+}
+.movie p {
+    font-size:10px;
+}
+
+}
+
+@media (max-width:1024px) {
+
+.catalog {
+    padding:60px 40px;
+}
+.movies-grid {
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media (min-width:1400px) {
+
+.movies-grid{
+    grid-template-columns:repeat(6,1fr);
+}
+
+}
